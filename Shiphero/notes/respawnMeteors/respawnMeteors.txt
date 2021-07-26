@@ -1,0 +1,76 @@
+		#region Respawn meteors
+	
+		if(_lvlmap <= 10 ){
+				repeat(irandom_range(2,5)){	
+					var _xx = choose(irandom_range(0, room_width*.3), irandom_range(room_width*.7, room_width));
+					var _yy = choose(irandom_range(0, room_height*.3),irandom_range(room_height*.7, room_height));
+					var _meteor = choose(obj_particula01);
+					instance_create_layer(_xx, _yy, "Instances", _meteor);
+				}
+	
+			} else if(_lvlmap <= 20 ){
+				repeat(irandom_range(2,5)){	
+					var _xx = choose(irandom_range(0, room_width*.3), irandom_range(room_width*.7, room_width));
+					var _yy = choose(irandom_range(0, room_height*.3),irandom_range(room_height*.7, room_height));
+					var _meteor = choose(obj_particula02);
+					instance_create_layer(_xx, _yy, "Instances", _meteor);
+				}
+
+			} else if(_lvlmap <= 40 ){
+				repeat(irandom_range(2,5)){	
+					var _xx = choose(irandom_range(0, room_width*.3), irandom_range(room_width*.7, room_width));
+					var _yy = choose(irandom_range(0, room_height*.3),irandom_range(room_height*.7, room_height));
+					var _meteor = choose(obj_particula03);
+					instance_create_layer(_xx, _yy, "Instances", _meteor);
+				}
+
+			} else if(_lvlmap <= 60 ){
+				repeat(irandom_range(1,2)){	
+					var _xx = choose(irandom_range(0, room_width*.3), irandom_range(room_width*.7, room_width));
+					var _yy = choose(irandom_range(0, room_height*.3),irandom_range(room_height*.7, room_height));
+					var _meteor = choose(obj_particula04);
+					instance_create_layer(_xx, _yy, "Instances", _meteor);
+				}
+
+			} else if(_lvlmap <= 90 ){
+				repeat(irandom_range(1,2)){	
+					var _xx = choose(irandom_range(0, room_width*.3), irandom_range(room_width*.7, room_width));
+					var _yy = choose(irandom_range(0, room_height*.3),irandom_range(room_height*.7, room_height));
+					var _meteor = choose(obj_particula05);
+					instance_create_layer(_xx, _yy, "Instances", _meteor);
+				}
+
+			} else if(_lvlmap <= 120 ){
+				repeat(irandom_range(1,2)){	
+					var _xx = choose(irandom_range(0, room_width*.3), irandom_range(room_width*.7, room_width));
+					var _yy = choose(irandom_range(0, room_height*.3),irandom_range(room_height*.7, room_height));
+					var _meteor = choose(obj_particula06);
+					instance_create_layer(_xx, _yy, "Instances", _meteor);
+				}
+
+			} else if(_lvlmap <= 160 ){
+				repeat(1){	
+					var _xx = choose(irandom_range(0, room_width*.3), irandom_range(room_width*.7, room_width));
+					var _yy = choose(irandom_range(0, room_height*.3),irandom_range(room_height*.7, room_height));
+					var _meteor = choose(obj_particula07);
+					instance_create_layer(_xx, _yy, "Instances", _meteor);
+				}
+
+			} else if(_lvlmap <= 200 ) {
+				repeat(1){
+					var _xx = choose(irandom_range(0, room_width*.3), irandom_range(room_width*.7, room_width));
+					var _yy = choose(irandom_range(0, room_height*.3),irandom_range(room_height*.7, room_height));
+					var _meteor = choose(obj_particula08);
+					instance_create_layer(_xx, _yy, "Instances", _meteor);
+				}
+
+			} else if(_lvlmap > 200){
+					repeat(choose(1,2)){
+						var _xx = choose(irandom_range(0, room_width*.3), irandom_range(room_width*.7, room_width));
+						var _yy = choose(irandom_range(0, room_height*.3),irandom_range(room_height*.7, room_height));
+						var _meteor = choose(obj_particula07,obj_particula08,obj_particula09);
+						instance_create_layer(_xx, _yy, "Instances", _meteor);
+					}
+			}
+			
+		#endregion

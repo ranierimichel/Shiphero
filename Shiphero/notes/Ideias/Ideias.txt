@@ -1,0 +1,14 @@
+
+// --------------- Novos modos ----------------
+Criar um espaço grande usar vieport camera seguir o player, do centro para as estremidades ir aumentando a dificuldade e a recompensa.
+
+2 players offline, dividir a tela no meio cada player em uma estremidade.
+
+AI batalha entre as naves, disputa de gem.
+
+A nave tomar dano por segundo pelo mapa
+
+Colocar musica de fundo e colocar atk speed para mudar de acordo com a musica.
+
+Usar efeitos dos planetas de acordo com o lvl do mapa, quanto maior o lvl aumentar quantidade de efeito.
+

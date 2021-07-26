@@ -1,0 +1,54 @@
+step event
+/// @description 
+
+// Inherit the parent event
+event_inherited();
+// ------------------------ Efeito ao atacar ---------------------------
+// Pegando a distancia do player
+var dist = point_distance(x, y, obj_ship_father.x, obj_ship_father.y);
+
+if(dist <= 150){
+	var part_sys = global.part_sys_atk_enimie;
+	var em_particle = global.em_atk_enimie;
+	var particle = global.particle;
+	var player = obj_ship_father;
+	var dir = point_direction(x,y,player.x,player.y);
+	// Atualizando direção
+	part_type_direction(particle, dir-(dist*.05), dir+(dist*.05), 0, 0);
+	// Atualizando a distancia
+	part_type_life(particle, 0, dist - dist*.75);
+	part_emitter_region(part_sys, em_particle, x, x, y, y,ps_shape_line, ps_distr_gaussian);
+	// Criando efeito
+	part_emitter_burst(part_sys, em_particle, particle, 50);
+	
+	// Causar dano
+	if(!damage_on){
+		alarm[1] = true;
+	}	
+} else {
+	alarm[1] = false;
+	damage_on = false;
+	
+	var part_sys = global.part_sys_atk_enimie;
+	var em_particle = global.em_atk_enimie;
+	var particle = global.particle;
+	
+	// Atualizando a distancia
+	part_type_life(particle , 20, 35);
+	part_type_direction(particle , 0, 359, 0, 0);	
+	part_emitter_region(part_sys, em_particle, x, x, y, y,ps_shape_ellipse, ps_distr_gaussian);
+	// Criando efeito
+	part_emitter_burst(part_sys, em_particle, particle,50);
+	
+}
+
+alarm event
+/// @description Causar dano
+
+global.hp -= 1;
+life += 1;
+
+damage_on = true;
+
+alarm[1] = 60;
+

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="iOSSourceFromMac">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/extensions/GooglePlayAdsExtension/iOSSourceFromMac/PersonalizedAdConsent.framework.zip!/" />
+      <root url="jar://$PROJECT_DIR$/extensions/GooglePlayAdsExtension/iOSSourceFromMac/GoogleMobileAds.framework.zip!/" />
+      <root url="jar://$PROJECT_DIR$/extensions/GooglePlayAdsExtension/iOSSourceFromMac/GoogleAppMeasurement.framework.zip!/" />
+      <root url="jar://$PROJECT_DIR$/extensions/GooglePlayAdsExtension/iOSSourceFromMac/nanopb.framework.zip!/" />
+      <root url="jar://$PROJECT_DIR$/extensions/GooglePlayAdsExtension/iOSSourceFromMac/GoogleUtilities.framework.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

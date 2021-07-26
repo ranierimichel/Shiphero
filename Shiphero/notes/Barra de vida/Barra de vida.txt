@@ -1,0 +1,4 @@
+// Barra de vida
+var sheight = sprite_height
+var hp = global.hp;
+draw_rectangle_color(x - (hp/2), y + sheight, x + (hp/2), y + (sheight + 5), c_red, c_lime, c_lime, c_red, false);

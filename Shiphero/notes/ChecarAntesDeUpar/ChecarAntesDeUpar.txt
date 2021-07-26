@@ -1,0 +1,7 @@
+Game Options - Android - General -> Mudar versão e Arquitetura.
+scr_init -> Zerar variáveis.
+rm_display_init -> Exportar: obj_googleAds, obj_googleService e obj_googleAchievements.
+obj_googleAds - Create -> Checar ID's.
+obj_game - Create -> Comentar código que salva ao iniciar.
+Importante: Sempre que atualizar IDE, atualizar o arquivo android manifest em:
+C:\ProgramData\GameMakerStudio2\Cache\runtimes\runtime-*******\android\runner\ProjectFiles\src\main

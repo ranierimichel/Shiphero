@@ -1,0 +1,34 @@
+/// @description Comportamento do objeto ship
+
+// ---------------Movimentação---------------
+// Checando se o botão foi pressionado
+var up = obj_button_aceleration.image_index;
+var left = obj_button_left.image_index;
+var right = obj_button_right.image_index;
+// mira
+aim = obj_button_aim.image_index;
+var angle = image_angle;
+if(aim){
+	rotation = 1;
+}
+
+if(!jogado){
+	// Rotacionando para esquerda
+	if(left == 2){
+		image_angle += global.rotation;
+	}
+	// Rotacionando para direita
+	if(right == 2){
+		image_angle -= global.rotation;
+	}
+	// Ganhando speed
+	if(up == 2){
+		motion_add(angle, global.aceleration*.01)
+	}
+		// Mira
+	if(aim == 2){
+		global.rotation = .5; // Diminuindo velocidade de rotacao
+	} else {
+		global.rotation = rotationv; // Voltando velocidade original
+	}
+}
